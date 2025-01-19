@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Mode Switcher",
+    "version": "1.0",
+    "description": "A simple dark mode toggle extension.",
+    "permissions": ["storage", "scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

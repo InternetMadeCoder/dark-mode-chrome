@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Switcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #toggle {
+      width: 100px;
+      height: 40px;
+      background-color: #ddd;
+      border-radius: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    #toggle.active {
+      background-color: #333;
+    }
+    #toggle .slider {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    #toggle.active .slider {
+      left: 64px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Dark Mode</h3>
+  <div id="toggle">
+    <div class="slider"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
