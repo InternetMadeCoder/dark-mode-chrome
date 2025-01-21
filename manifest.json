@@ -4,7 +4,10 @@
   "version": "1.0",
   "description": "A simple dark mode toggle extension.",
   "permissions": ["storage", "scripting", "activeTab"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": [
+    "<all_urls>",
+    "chrome-extension://*/pdfviewer/*"
+  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
